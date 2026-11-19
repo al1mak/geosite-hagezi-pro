@@ -99,7 +99,7 @@ sources:
     min_bytes: 2000
 
   - name: category-ads
-    # Ad/tracking blocklist from hagezi (Light by default).
+    # Ad/tracking blocklist from hagezi (Pro).
     # Base domains, daily updates. Self-contained flat list, no includes. The
     # current size is the "Number of entries" line in the file header.
     # To switch to a wider tier: multi-onlydomains, pro-onlydomains or
@@ -118,8 +118,8 @@ sources:
     type: github_raw
     repo: hagezi/dns-blocklists
     ref: main
-    path: wildcard/light-onlydomains.txt
+    path: wildcard/pro-onlydomains.txt
     fallback_urls:
-      - https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/wildcard/light-onlydomains.txt
+      - https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/wildcard/pro-onlydomains.txt
     target: data/category-ads
     min_bytes: 300000
